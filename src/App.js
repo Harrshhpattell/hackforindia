@@ -113,6 +113,12 @@ function Category() {
   return (
     <div className="category">
       <h1>Category</h1>
+      <div className="card1">
+        Event Planning & Coordination
+        <div>
+          <img src="./images/NEXU Image.png" alt=""></img>
+        </div>
+      </div>
     </div>
   );
 }
