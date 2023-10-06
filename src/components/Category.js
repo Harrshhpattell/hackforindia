@@ -1,31 +1,24 @@
 import "./css/Category.css";
-import { useState } from "react";
-
-const data = [
-  {
-    header: "Birthday Event",
-    description:
-      "Our experienced team can help you plan and execute events of all sizes and types, from corporate conferences to intimate weddings.",
-    imageLink:
-      "https://images.pexels.com/photos/18608193/pexels-photo-18608193/free-photo-of-teide-nationalpark-teneriffa.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-  },
-  {
-    header: "Co-operate Events",
-    description:
-      "Enjoy delicious catering options tailored to your event's theme and dietary preferences. Your guests will be delighted.",
-    imageLink:
-      "https://images.pexels.com/photos/18608193/pexels-photo-18608193/free-photo-of-teide-nationalpark-teneriffa.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-  },
-  {
-    header: "Wedding Event",
-    description:
-      "We'll assist you in finding the perfect venue for your event, whether it's a grand ballroom or a picturesque outdoor setting.",
-    imageLink:
-      "https://images.pexels.com/photos/18608193/pexels-photo-18608193/free-photo-of-teide-nationalpark-teneriffa.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-  },
-];
+import React, { useState, useEffect } from "react";
 
 export default function Category() {
+  const [data, setData] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Replace with your actual API endpoint
+    fetch("https://abhay-1552.github.io/project_api/category.json")
+      .then((response) => response.json())
+      .then((data) => {
+        setData(data);
+        setIsLoading(false);
+      })
+      .catch((error) => console.error("Error fetching data:", error));
+  }, []);
+
+  if (isLoading) {
+    return <p>Loading...</p>;
+  }
   return (
     <div id="category" className="category">
       <h1>Category</h1>
@@ -33,15 +26,13 @@ export default function Category() {
         {data.map((data, index) => (
           <Card
             key={index}
-            image={data.imageLink}
-            header={data.header}
-            description={data.description}
+            image={data.data.image}
+            header={data.data.name}
+            description={data.data.description}
           />
         ))}
       </div>
-      <div style={{ textAlign: "center" }}>
-        <button className="btn-start">View All</button>
-      </div>
+      <div style={{ textAlign: "center" }}></div>
     </div>
   );
 }

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./css/Faqs.css";
 
 const faqs = [
   {
@@ -33,6 +34,7 @@ const faqs = [
 export default function Faqs() {
   return (
     <div className="accordion">
+      <h1>FAQS</h1>
       {faqs.map((list, index) => (
         <AccordionItems
           key={index}
@@ -43,7 +45,7 @@ export default function Faqs() {
     </div>
   );
 }
-function AccordionItems({ question, answer }) {
+function AccordionItems({ question, answer, key }) {
   const [isOpen, setIsOpen] = useState(false);
   function handleToggle() {
     setIsOpen((isOpen) => !isOpen);
@@ -54,7 +56,11 @@ function AccordionItems({ question, answer }) {
         <p className="title">{question}</p>
         <p className={isOpen ? "open" : "close"}>{isOpen ? "-" : "+"}</p>
       </div>
-      {isOpen && <p className="text">{answer}</p>}
+      {isOpen && (
+        <p className="text">
+          <i class="fa-solid fa-arrow-right"></i> {answer}
+        </p>
+      )}
     </div>
   );
 }

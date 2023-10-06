@@ -32,9 +32,7 @@ export default function MainSection() {
           </p>
         </div>
         <div>
-          <a href="#category">
-            <button className="btn-start">Events</button>
-          </a>
+          <button className="btn-start">Events</button>
         </div>
         <div>
           <img
