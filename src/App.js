@@ -6,6 +6,7 @@ function App() {
       <Header />
       <MainSection />
       <Whyus />
+      <Category/>
     </div>
   );
 }
@@ -49,11 +50,10 @@ function MainSection() {
       <div className="center">
         <div>
           <h1>
-            The <span>Fusion</span> of Cards and Words Flip, Spell, Triumph!
+            Elevate Your Events with Nexus Hosts - Your Partner in Unforgettable Experiences!
           </h1>
           <p>
-            <b>Flippy Brain:</b> Spell & Brain - Flip the cards, craft the
-            words, conquer the game. Are You up for the ultimate challenge?
+          At <b>Nexus Hosts</b>, we are your dedicated partners in crafting exceptional events that leave lasting impressions. Our team of seasoned event management experts is here to turn your vision into reality, creating seamless and unforgettable experiences for any occasion.
           </p>
         </div>
         <div>
@@ -100,6 +100,15 @@ function Whyus() {
         </p>
         <a href="www.google.com">Learn More</a>
       </div>
+    </div>
+  );
+}
+
+function Category(){
+  return(
+    <div className="category">
+      <h1>Category</h1>
+
     </div>
   );
 }
