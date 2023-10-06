@@ -5,7 +5,7 @@ function App() {
     <div className="App">
       <Header />
       <MainSection />
-      <Category />
+      <Whyus />
     </div>
   );
 }
@@ -13,7 +13,7 @@ function App() {
 function Header() {
   return (
     <nav>
-      <div className="logo">Flippy-Brain</div>
+      <div className="logo">Nexus Host</div>
       <div>
         <ul>
           <li>Home</li>
@@ -88,9 +88,9 @@ function MainSection() {
   );
 }
 
-function Category() {
+function Whyus() {
   return (
-    <div className="category">
+    <div className="whyus">
       <div className="message-box">
         <h3>New updates</h3>
         <p>
