@@ -6,7 +6,7 @@ function App() {
       <Header />
       <MainSection />
       <Whyus />
-      <Category/>
+      <Category />
     </div>
   );
 }
@@ -50,10 +50,15 @@ function MainSection() {
       <div className="center">
         <div>
           <h1>
-            Elevate Your Events with Nexus Hosts - Your Partner in Unforgettable Experiences!
+            Elevate Your Events with Nexus Hosts - Your Partner in Unforgettable
+            Experiences!
           </h1>
           <p>
-          At <b>Nexus Hosts</b>, we are your dedicated partners in crafting exceptional events that leave lasting impressions. Our team of seasoned event management experts is here to turn your vision into reality, creating seamless and unforgettable experiences for any occasion.
+            At <b>Nexus Hosts</b>, we are your dedicated partners in crafting
+            exceptional events that leave lasting impressions. Our team of
+            seasoned event management experts is here to turn your vision into
+            reality, creating seamless and unforgettable experiences for any
+            occasion.
           </p>
         </div>
         <div>
@@ -65,8 +70,8 @@ function MainSection() {
           <img
             style={{ borderRadius: "10px" }}
             width="100%"
-            src="./images/kid playing.png"
-            alt=""
+            src="./images/NEXU Image.png"
+            alt="logo"
           />
         </div>
       </div>
@@ -104,11 +109,10 @@ function Whyus() {
   );
 }
 
-function Category(){
-  return(
+function Category() {
+  return (
     <div className="category">
       <h1>Category</h1>
-
     </div>
   );
 }

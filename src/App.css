@@ -57,7 +57,7 @@
 
 .App .main-section .center {
   font-size: 2rem;
-  margin: 0.5rem 15rem;
+  margin: 0.5rem 5rem;
   text-align: center;
   color: #0b2447;
 }
@@ -97,17 +97,6 @@
 
 @media (max-width: 1150px) {
   .App .main-section .left {
-    margin: 0 2rem;
-    font-size: 7rem;
-    gap: 2rem;
-  }
-  .App .main-section .center {
-    margin: 0.5rem 0rem;
-  }
-}
-
-@media (max-width: 800px) {
-  .App .main-section .left {
     z-index: 0;
     position: relative;
     left: 0;
@@ -120,7 +109,7 @@
   }
 }
 
-.category{
+.category {
   margin: 2rem;
   text-align: center;
   color: #0b2447;
