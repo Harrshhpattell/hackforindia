@@ -63,7 +63,7 @@ function MainSection() {
         </div>
         <div>
           <a href="https://github.com/Harrshhpattell">
-            <button className="btn-start">Start</button>
+            <button className="btn-start">Events</button>
           </a>
         </div>
         <div>
@@ -96,14 +96,20 @@ function MainSection() {
 function Whyus() {
   return (
     <div className="whyus">
+      <h1>🌟 Why Choose Nexus Hosts? 🌟</h1>
       <div className="message-box">
-        <h3>New updates</h3>
+        <h3>✅ Experience</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi,
-          quaerat. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Consequatur, nisi!
+          With years of industry expertise, we bring a wealth of knowledge to
+          the table. From corporate gatherings to weddings, we've done it all.
         </p>
-        <a href="www.google.com">Learn More</a>
+      </div>
+      <div className="message-box">
+        <h3>✅ Experience</h3>
+        <p>
+          With years of industry expertise, we bring a wealth of knowledge to
+          the table. From corporate gatherings to weddings, we've done it all.
+        </p>
       </div>
     </div>
   );
