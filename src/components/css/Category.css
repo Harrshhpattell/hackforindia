@@ -1,0 +1,69 @@
+.category > h1 {
+  margin: 2rem;
+  text-align: center;
+  color: #0b2447;
+  font-size: 5rem;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card .card-details .image img {
+  width: 100%;
+  border-radius: 3rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.card .card-details {
+  position: relative;
+  width: 30rem;
+  margin: 3rem;
+  font-size: 1.5rem;
+  border: 1px solid #0b2447;
+  border-radius: 3rem;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.card .card-details:hover {
+  background-color: #0b2447;
+  color: #fff;
+}
+
+.card .card-details .image {
+  width: 100%;
+}
+
+.card-details:hover .image img {
+  transform: scale(1.1);
+}
+
+.card .card-details h2,
+.card .card-details p {
+  padding: 0 2rem;
+}
+.card .card-details p {
+  margin-bottom: 5rem;
+  height: 8rem;
+}
+
+.card-details .view-more-btn {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 1rem;
+  border-radius: 0 0 3rem 3rem;
+  border: none;
+  color: #fff;
+  background-color: #0b2447;
+  transition: all 0.5s ease-in-out;
+}
+
+.card-details:hover .view-more-btn {
+  background-color: #2f425d;
+  color: #fff;
+}
