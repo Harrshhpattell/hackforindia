@@ -108,7 +108,12 @@ function Category(){
   return(
     <div className="category">
       <h1>Category</h1>
-
+      <div className="card1">
+        Event Planning & Coordination
+        <div>
+          <img src="./images/kid playing.png"></img>
+        </div>
+      </div>
     </div>
   );
 }
