@@ -25,6 +25,10 @@
   color: #0b2447;
 }
 
+.App .main-section img {
+  filter: drop-shadow(2px 7px 14px #0b2447);
+}
+
 .btn-start {
   margin: 3rem;
   padding: 2rem 10rem;

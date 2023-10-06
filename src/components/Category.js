@@ -39,6 +39,9 @@ export default function Category() {
           />
         ))}
       </div>
+      <div style={{ textAlign: "center" }}>
+        <button className="btn-start">View All</button>
+      </div>
     </div>
   );
 }
