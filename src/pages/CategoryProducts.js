@@ -14,6 +14,7 @@
 // }
 
 import "./CategoryProducts.css";
+import { Link } from "react-router-dom";
 
 import { useState } from "react";
 
@@ -48,7 +49,7 @@ const data = [
   },
 ];
 
-export default function CategoryProducts({ cateName }) {
+export default function CategoryProducts({ cateName, setcattopage }) {
   return (
     <div className="cate-name">
       <h1>{cateName}</h1>

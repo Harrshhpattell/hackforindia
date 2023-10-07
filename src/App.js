@@ -10,6 +10,7 @@ import { useState } from "react";
 
 function App() {
   const [cateName, setCateName] = useState("");
+  const [cattopage, setCattopage] = useState("");
   return (
     <div className="App">
       <Header />
@@ -29,7 +30,12 @@ function App() {
           />
           <Route
             path={`/category/${cateName}`}
-            element={<CategoryProducts cateName={cateName} />}
+            element={
+              <CategoryProducts
+                setcattopage={setCattopage}
+                cateName={cateName}
+              />
+            }
           />
         </Routes>
       </BrowserRouter>

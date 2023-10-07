@@ -9,7 +9,9 @@ export default function Header() {
   };
   return (
     <nav>
-      <div className="logo">Nexus Host</div>
+      <div className="logo">
+        <img width="70%" src="images/Nexus Logo.png" alt="logo" />
+      </div>
       <div className={`nav-links ${isMenuOpen ? "open-menu" : ""}`}>
         <div class="MENU-1">
           <label class="burger1" for="burger1">
