@@ -1,8 +1,8 @@
-import { Link } from "react-router-dom";
 import "./css/Category.css";
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
-export default function Category() {
+export default function Category({ setCateName }) {
   const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
@@ -20,37 +20,35 @@ export default function Category() {
   if (isLoading) {
     return <p>Loading...</p>;
   }
+
+  function handleClick(categoryName) {
+    setCateName(categoryName);
+  }
+
   return (
     <div id="category" className="category">
       <h1>Category</h1>
       <div className="card">
         {data.map((data, index) => (
-          <Card
+          <div
+            onClick={() => handleClick(data.data.name)}
             key={index}
-            image={data.data.image}
-            header={data.data.name}
-            description={data.data.description}
-          />
+            className="card-details"
+          >
+            <div className="image">
+              <img src={data.data.image} alt="imageee" />
+            </div>
+            <h2>{data.data.name}</h2>
+            <p>
+              <TextExpander>{data.data.description}</TextExpander>
+            </p>
+            <Link to={`/category/${data.data.name}`}>
+              <button className="view-more-btn">View</button>
+            </Link>
+          </div>
         ))}
       </div>
       <div style={{ textAlign: "center" }}></div>
-    </div>
-  );
-}
-
-function Card({ image, header, description }) {
-  return (
-    <div className="card-details">
-      <div className="image">
-        <img src={image} alt="image" />
-      </div>
-      <h2>{header}</h2>
-      <p>
-        <TextExpander>{description}</TextExpander>
-      </p>
-      <button className="view-more-btn">
-        <Link to="/category">View</Link>
-      </button>
     </div>
   );
 }
