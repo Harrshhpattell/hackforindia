@@ -41,7 +41,7 @@ function Card({ image, header, description }) {
   return (
     <div className="card-details">
       <div className="image">
-        <img src={image} alt="image" />
+        <img src={image} alt="imagee" />
       </div>
       <h2>{header}</h2>
       <p>
