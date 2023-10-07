@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Whyus from "./components/Whyus";
 import Category from "./components/Category";
 import Faqs from "./components/Faqs";
+import { Route, Router, Routes } from "react-router-dom";
 
 function App() {
   return (
@@ -12,6 +13,9 @@ function App() {
       <MainSection />
       <Whyus />
       <Category />
+      <Router>
+        <Route path="/category" element={<Category/>}></Route>
+      </Router>
       <Faqs />
     </div>
   );
