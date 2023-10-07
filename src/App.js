@@ -12,17 +12,18 @@ function App() {
   const [cateName, setCateName] = useState("");
   return (
     <div className="App">
+      <Header />
       <BrowserRouter>
         <Routes>
           <Route
             path="/"
             element={
               <div>
-                <Header />
                 <MainSection />
                 <Whyus />
                 <Category setCateName={setCateName} />
                 <Faqs />
+                <Footer />
               </div>
             }
           />
@@ -37,3 +38,14 @@ function App() {
 }
 
 export default App;
+
+function Footer() {
+  return (
+    <div className="footer-logo">
+      <img
+        src="./images/Creative Color Brushstroke Lettering Logo.png"
+        alt="logo"
+      />
+    </div>
+  );
+}

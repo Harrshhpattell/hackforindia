@@ -7,8 +7,11 @@ export default function Category({ setCateName }) {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Replace with your actual API endpoint
-    fetch("https://abhay-1552.github.io/project_api/category.json")
+    const cacheBuster = Math.random();
+
+    const apiUrl = `https://abhay-1552.github.io/project_api/category.json?cache=${cacheBuster}`;
+
+    fetch(apiUrl)
       .then((response) => response.json())
       .then((data) => {
         setData(data);
