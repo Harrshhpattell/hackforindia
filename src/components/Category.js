@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./css/Category.css";
 import React, { useState, useEffect } from "react";
 
@@ -41,13 +42,15 @@ function Card({ image, header, description }) {
   return (
     <div className="card-details">
       <div className="image">
-        <img src={image} alt="imagee" />
+        <img src={image} alt="image" />
       </div>
       <h2>{header}</h2>
       <p>
         <TextExpander>{description}</TextExpander>
       </p>
-      <button className="view-more-btn">View</button>
+      <button className="view-more-btn">
+        <Link to="/category">View</Link>
+      </button>
     </div>
   );
 }
