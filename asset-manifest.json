@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/hackforindia/static/css/main.36d81c32.css",
+    "main.js": "/hackforindia/static/js/main.02efc98b.js",
+    "index.html": "/hackforindia/index.html",
+    "main.36d81c32.css.map": "/hackforindia/static/css/main.36d81c32.css.map",
+    "main.02efc98b.js.map": "/hackforindia/static/js/main.02efc98b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.36d81c32.css",
+    "static/js/main.02efc98b.js"
+  ]
+}
