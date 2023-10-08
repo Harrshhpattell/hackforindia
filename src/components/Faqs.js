@@ -45,7 +45,7 @@ export default function Faqs() {
     </div>
   );
 }
-function AccordionItems({ question, answer, key }) {
+function AccordionItems({ question, answer }) {
   const [isOpen, setIsOpen] = useState(false);
   function handleToggle() {
     setIsOpen((isOpen) => !isOpen);

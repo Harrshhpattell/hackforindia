@@ -10,7 +10,7 @@ export default function Header() {
   return (
     <nav>
       <div className="logo">
-        <img width="70%" src="images/Nexus Logo.png" alt="logo" />
+        <img width="70%" src="./images/Nexus Logo.jpg" alt="logo" />
       </div>
       <div className={`nav-links ${isMenuOpen ? "open-menu" : ""}`}>
         <div class="MENU-1">
