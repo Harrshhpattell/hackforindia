@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/hackforindia/static/css/main.36d81c32.css",
-    "main.js": "/hackforindia/static/js/main.ed021f78.js",
+    "main.css": "/hackforindia/static/css/main.f4d58b3e.css",
+    "main.js": "/hackforindia/static/js/main.c32e3804.js",
     "index.html": "/hackforindia/index.html",
-    "main.36d81c32.css.map": "/hackforindia/static/css/main.36d81c32.css.map",
-    "main.ed021f78.js.map": "/hackforindia/static/js/main.ed021f78.js.map"
+    "main.f4d58b3e.css.map": "/hackforindia/static/css/main.f4d58b3e.css.map",
+    "main.c32e3804.js.map": "/hackforindia/static/js/main.c32e3804.js.map"
   },
   "entrypoints": [
-    "static/css/main.36d81c32.css",
-    "static/js/main.ed021f78.js"
+    "static/css/main.f4d58b3e.css",
+    "static/js/main.c32e3804.js"
   ]
 }
