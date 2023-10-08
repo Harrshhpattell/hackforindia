@@ -45,7 +45,7 @@ export default function Category({ setCateName }) {
             <p>
               <TextExpander>{data.data.description}</TextExpander>
             </p>
-            <Link to={`/category/${data.data.name}`}>
+            <Link to={`/hackforindia/category/${data.data.name}`}>
               <button className="view-more-btn">View</button>
             </Link>
           </div>
