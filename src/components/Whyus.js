@@ -27,7 +27,8 @@ const whyUs = [
 export default function Whyus() {
   return (
     <div className="whyus">
-      <h1>🌟 Why Choose Nexus? 🌟</h1>
+      <h1>Why Choose Nexus?</h1>
+
       <div className="whyus-box">
         {whyUs.map((text, index) => (
           <MessageBox key={index} head={text.head} desc={text.desc} />

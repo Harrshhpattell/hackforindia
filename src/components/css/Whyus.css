@@ -52,3 +52,11 @@
     height: 230px;
   }
 }
+
+@media (max-width: 500px) {
+  .whyus > h1 {
+    margin: 2rem 0;
+    font-size: 3.5rem;
+    padding: 0;
+  }
+}

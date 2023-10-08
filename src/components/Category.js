@@ -28,6 +28,13 @@ export default function Category({ setCateName }) {
     setCateName(categoryName);
   }
 
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }
+
   return (
     <div id="category" className="category">
       <h1>Category</h1>
@@ -46,7 +53,9 @@ export default function Category({ setCateName }) {
               <TextExpander>{data.data.description}</TextExpander>
             </p>
             <Link to={`/hackforindia/category/${data.data.name}`}>
-              <button className="view-more-btn">View</button>
+              <button onClick={scrollToTop} className="view-more-btn">
+                View
+              </button>
             </Link>
           </div>
         ))}
